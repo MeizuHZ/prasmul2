@@ -1,0 +1,215 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    min-height: 200vh;
+    background-color: #00376a;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    background-color: aqua;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+/* HEADER */
+
+header .container {
+    justify-content: space-between;
+    height: 60px;
+    background-color: #00376a;
+}
+
+header .container .nav-header {
+    width: 490px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container a{
+    font-size: 13px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: gray;
+}
+
+header .container .nav-header a.btn{
+    display: inline-block;
+    background-color: rgb(61, 177, 102);
+    color: white;
+    font-weight: bold;
+    padding: 0 5px;
+    height: 60px;
+    width: 120px;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* STICKY NAV */
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 999;
+}
+
+nav .container {
+    justify-content: space-between;
+    height: 91px;
+    background-color: white;
+}
+
+nav .container ul.sticky-nav li.item{
+    display: inline-block;
+    list-style: none;
+    font-size: 13px;
+    margin-left: 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+/* SECTION HERO */
+section.hero {
+    height: calc(100vh - 60px - 91px);
+    background-color: yellowgreen;
+    background-image: url(assets/hero-01.jpeg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+section.hero .container {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+/* SECTION FACULTY */
+
+section.faculty {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 255px;
+    background-color: yellowgreen;
+    gap: 10px;
+    padding: 10px;
+}
+
+section.faculty div.item-faculty {
+    background-image: url(assets/2a2ca114-18b5-44cf-b7dc-b9a617a62461.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+section.faculty div.item-facultyy {
+    background-image: url(assets/8c86b213-78fd-40b8-b3d7-3bf6c083c338.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+section.faculty div.item-facultyyy {
+    background-image: url(assets/9c4b02ed-5b85-442f-97b7-7687725223a4.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+section.faculty div.item-facultyyyy{
+    background-image: url(assets/e98f1976-a3ef-4900-9117-5750468db7cd.jpg );
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/* SECTION ABOUT */
+
+section.about {
+    height: 1000px;
+    background-color: #00376a;
+}
+
+/* SECTION FLOATING IMG */
+
+section.floating-img {
+    position: relative;
+    top: 50px;
+    height: 190px;
+    width: 80%;
+    background-color: salmon;
+    background-image: url(assets/Foto-Aerial-BSD-1-Foto_-Prasmul.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    z-index: 998;
+}
+
+/* SECTION VIDEO UNI */
+
+section.video-uni {
+    position: relative;
+    height: 673px;
+    background-color: yellowgreen;
+    background-image: url('assets/prasmul.uni.jpg');
+    background-repeat: no-repeat;
+    background-size : cover;
+}
+
+/* section.video-uni .container.video-text {
+    height: 100%;
+    background-color: gray;
+    opacity: 0.5;
+} */
+
+section.video-uni .container.text {
+    position: absolute;
+    height: 673px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+section.video-uni .container.text a {
+    font-size: 120px;
+    text-decoration: none;
+}
+
+/* FOOTER */
+
+footer section.nav-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 70px;
+    height: 150px;
+    font-size: 40px;
+    padding: 5px;
+}
+
+footer section.nav-buttons a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+footer section.nav-buttons a.wa-btn {
+    background-color: rgb(45, 183, 66);
+    border-radius: 75px;
+    margin-top: 10px;
+}
+
+footer section.nav-buttons a.go-to-top-btn {
+    background-color: rgb(218, 213, 213);
+    border-radius: 75px;
+}
